@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Non-Invasive Leak Detection in Longmont Homes | Twin Peaks Longmont Hub</title>
+    <meta name="description" content="An expert editorial portal examining non-destructive plumbing diagnostics, thermal thermography, acoustic sensing, and tracer gas technology in Boulder County homes.">
+    
+    <!-- Google Fonts: Cyber-Architectural Aesthetic (Syne + Space Grotesk) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Avant-Garde Bioluminescent Deep Marine & Cyber-Copper Palette */
+            --bg-void: #030712;
+            --bg-card: rgba(15, 23, 42, 0.75);
+            --bg-glass-heavy: rgba(11, 19, 36, 0.9);
+            
+            --accent-cyan: #06b6d4;
+            --accent-teal: #14b8a6;
+            --accent-copper: #f97316;
+            --accent-gold: #eab308;
+            
+            --border-neon: rgba(6, 182, 212, 0.25);
+            --border-copper: rgba(249, 115, 22, 0.3);
+            
+            --text-heading: #f8fafc;
+            --text-body: #94a3b8;
+            --text-muted: #64748b;
+
+            --font-display: 'Syne', sans-serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-bounce: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            background-color: var(--bg-void);
+            color: var(--text-body);
+            font-family: var(--font-body);
+            line-height: 1.8;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 85% 15%, rgba(6, 182, 212, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 15% 85%, rgba(249, 115, 22, 0.06) 0%, transparent 45%),
+                linear-gradient(to bottom, var(--bg-void), #010409);
+            background-attachment: fixed;
+        }
+
+        .container {
+            max-width: 1380px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-padding {
+            padding: 8rem 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            color: var(--text-heading);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+
+        a:hover {
+            color: var(--accent-copper);
+        }
+
+        /* Unique Geometric Cyber Divider */
+        .cyber-divider {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            background: linear-gradient(90deg, transparent, var(--accent-cyan), var(--accent-copper), transparent);
+            margin: 5rem 0;
+            opacity: 0.5;
+        }
+
+        .cyber-divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            background: var(--accent-cyan);
+            box-shadow: 0 0 10px var(--accent-cyan);
+            border-radius: 50%;
+        }
+
+        /* Glassmorphism Structural Cards */
+        .glass-panel {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border-neon);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            transition: var(--transition-smooth);
+        }
+
+        .glass-panel:hover {
+            border-color: var(--accent-copper);
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(249, 115, 22, 0.12);
+        }
+
+        /* Buttons & Badges */
+        .btn-cyan {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1.1rem 2.4rem;
+            background: linear-gradient(135deg, var(--accent-cyan), #0284c7);
+            color: #030712;
+            font-family: var(--font-body);
+            font-weight: 700;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
+            transition: var(--transition-bounce);
+        }
+
+        .btn-cyan:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(6, 182, 212, 0.5);
+            color: #000000;
+        }
+
+        .btn-copper-outline {
+            display: inline-flex;
+            align-items: center;
+            padding: 1.05rem 2.2rem;
+            background: rgba(249, 115, 22, 0.08);
+            color: var(--accent-copper);
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 12px;
+            border: 1px solid var(--border-copper);
+            transition: var(--transition-smooth);
+        }
+
+        .btn-copper-outline:hover {
+            background: rgba(249, 115, 22, 0.2);
+            color: #ffffff;
+            border-color: var(--accent-copper);
+        }
+
+        .badge-cyber {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1.2rem;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid var(--border-neon);
+            color: var(--accent-cyan);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* SECTION 1: Sticky Navigation Bar */
+        .nav-header {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 92%;
+            max-width: 1380px;
+            z-index: 1000;
+            padding: 0.8rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(3, 7, 18, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border-neon);
+            border-radius: 16px;
+        }
+
+        .nav-logo {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.01em;
+        }
+
+        .nav-logo span {
+            color: var(--accent-cyan);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            color: var(--text-body);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent-cyan);
+        }
+
+        /* SECTION 2: Dynamic Hero Section (Asymmetric Modern Layout) */
+        .hero-layout {
+            padding-top: 13rem;
+            padding-bottom: 5rem;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 3.6rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-lead {
+            font-size: 1.15rem;
+            color: var(--text-body);
+            margin-bottom: 2.5rem;
+            max-width: 620px;
+        }
+
+        .hero-visual {
+            position: relative;
+        }
+
+        .hero-img-wrapper {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border-copper);
+            height: 480px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.05) brightness(0.9);
+        }
+
+        .hero-stat-badge {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            padding: 1.5rem;
+            background: rgba(11, 19, 36, 0.95);
+            border: 1px solid var(--border-neon);
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        }
+
+        /* SECTION 3: Quick Stats & Achievements Grid */
+        .stats-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--border-neon);
+            border-top: 3px solid var(--accent-cyan);
+            border-radius: 16px;
+        }
+
+        .stat-value {
+            font-family: var(--font-display);
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--accent-cyan);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-desc {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-muted);
+        }
+
+        /* SECTION 4: Platform Overview / Editorial Mission */
+        .mission-grid {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .mission-visual {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid var(--border-neon);
+        }
+
+        .mission-visual img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        /* SECTION 5: Main Featured Article Section (~800-1000 words) */
+        .article-card {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 5rem 4rem;
+            background: var(--bg-glass-heavy);
+            border-radius: 28px;
+            border: 1px solid var(--border-neon);
+            box-shadow: 0 30px 80px rgba(0, 0, 0, 0.85);
+        }
+
+        .article-header-tag {
+            color: var(--accent-copper);
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .article-title {
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 2.5rem;
+            color: #ffffff;
+            line-height: 1.2;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: var(--text-body);
+        }
+
+        .article-content h3 {
+            font-size: 1.6rem;
+            margin: 2.5rem 0 1rem 0;
+            color: var(--accent-cyan);
+        }
+
+        .article-content p {
+            margin-bottom: 1.8rem;
+        }
+
+        .article-quote {
+            margin: 2.5rem 0;
+            padding: 2rem 2.5rem;
+            background: rgba(6, 182, 212, 0.05);
+            border-left: 4px solid var(--accent-cyan);
+            border-radius: 0 16px 16px 0;
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            color: var(--text-heading);
+        }
+
+        .seo-backlink-primary {
+            background: rgba(249, 115, 22, 0.15);
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            border: 1px solid var(--accent-copper);
+            font-weight: 700;
+            color: #ffffff !important;
+            transition: var(--transition-smooth);
+        }
+
+        .seo-backlink-primary:hover {
+            background: var(--accent-copper);
+            color: #030712 !important;
+        }
+
+        /* SECTION 6: Core Features & Key Value Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .feature-box {
+            padding: 2.5rem 2rem;
+            position: relative;
+        }
+
+        .feature-icon {
+            width: 56px;
+            height: 56px;
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid var(--border-neon);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-cyan);
+        }
+
+        /* SECTION 7: Visual Breakdown / Step-by-Step Guide */
+        .process-layout {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-top: 3.5rem;
+        }
+
+        .process-card {
+            padding: 2.2rem 1.5rem;
+            position: relative;
+        }
+
+        .process-num {
+            font-family: var(--font-display);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: rgba(249, 115, 22, 0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        /* SECTION 8: Comprehensive Comparison Table / Value Matrix */
+        .table-responsive {
+            margin-top: 3.5rem;
+            overflow-x: auto;
+        }
+
+        .matrix-grid-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        .matrix-grid-table th, .matrix-grid-table td {
+            padding: 1.3rem 1.8rem;
+            border-bottom: 1px solid rgba(6, 182, 212, 0.15);
+        }
+
+        .matrix-grid-table th {
+            background: rgba(6, 182, 212, 0.08);
+            color: var(--accent-cyan);
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+        }
+
+        .matrix-grid-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* SECTION 9: Interactive FAQ Accordion */
+        .faq-container {
+            max-width: 880px;
+            margin: 3.5rem auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .faq-card {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .faq-trigger {
+            width: 100%;
+            padding: 1.8rem 2.2rem;
+            background: transparent;
+            border: none;
+            color: var(--text-heading);
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1), padding 0.3s ease;
+            padding: 0 2.2rem;
+            color: var(--text-body);
+        }
+
+        .faq-card.active .faq-body {
+            max-height: 250px;
+            padding-bottom: 1.8rem;
+        }
+
+        .faq-plus {
+            color: var(--accent-cyan);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-card.active .faq-plus {
+            transform: rotate(45deg);
+        }
+
+        /* SECTION 10: Expert Tips & Best Practices Cards */
+        .tips-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .tip-card-inner {
+            padding: 2.8rem 2.2rem;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .tip-badge {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-copper);
+            color: #030712;
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.2rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        /* SECTION 11: User Feedback & Testimonials Showcase */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .review-card {
+            padding: 2.2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.8rem;
+        }
+
+        .review-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-cyan);
+        }
+
+        /* SECTION 12: Highlighted Resource Callout Banner */
+        .banner-callout {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.12), rgba(249, 115, 22, 0.12));
+            border: 1px solid var(--accent-cyan);
+            border-radius: 28px;
+            padding: 4.5rem;
+            text-align: center;
+        }
+
+        /* SECTION 13: Functional Contact / Consultation Form Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .form-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
+
+        .form-control input, .form-control select, .form-control textarea {
+            width: 100%;
+            padding: 1.1rem 1.4rem;
+            background: rgba(3, 7, 18, 0.8);
+            border: 1px solid var(--border-neon);
+            border-radius: 12px;
+            color: var(--text-heading);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition-smooth);
+        }
+
+        .form-control input:focus, .form-control select:focus, .form-control textarea:focus {
+            border-color: var(--accent-copper);
+            box-shadow: 0 0 20px rgba(249, 115, 22, 0.25);
+        }
+
+        /* SECTION 14: Comprehensive Footer */
+        .footer-area {
+            background: #010408;
+            border-top: 1px solid var(--border-neon);
+            padding: 5rem 0 2.5rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-cols {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .footer-cols h4 {
+            color: var(--text-heading);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        .footer-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-bottom {
+            padding-top: 2.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1024px) {
+            .hero-layout { grid-template-columns: 1fr; text-align: center; }
+            .hero-lead { margin: 0 auto 2.5rem auto; }
+            .mission-grid { grid-template-columns: 1fr; }
+            .stats-wrapper { grid-template-columns: repeat(2, 1fr); }
+            .features-grid, .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-layout { grid-template-columns: repeat(2, 1fr); }
+            .contact-grid { grid-template-columns: 1fr; }
+            .footer-cols { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 640px) {
+            .nav-menu { display: none; }
+            .hero-title { font-size: 2.5rem; }
+            .stats-wrapper, .features-grid, .reviews-grid, .process-layout, .tips-layout { grid-template-columns: 1fr; }
+            .article-card { padding: 2.5rem 1.5rem; }
+            .footer-cols { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SECTION 1: Modern Sticky Navigation Bar -->
+    <header class="nav-header">
+        <div class="nav-logo">
+            Twin Peaks <span>Longmont Hub</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#article">Journal</a></li>
+            <li><a href="#tech">Technologies</a></li>
+            <li><a href="#matrix">Comparison</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#contact" class="btn-cyan" style="padding: 0.6rem 1.4rem; font-size: 0.85rem;">Diagnostic Audit</a>
+    </header>
+
+    <!-- SECTION 2: Dynamic Hero Section -->
+    <section class="container hero-layout">
+        <div>
+            <span class="badge-cyber">Boulder County Infrastructure Report</span>
+            <h1 class="hero-title">Advanced Non-Invasive Leak Detection in Longmont</h1>
+            <p class="hero-lead">Exploring modern sub-surface acoustics, infrared thermal imaging, and inert tracer gas testing designed to protect finished interiors across Twin Peaks residential properties.</p>
+            <div style="display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap;">
+                <a href="#article" class="btn-cyan">Read Technical Feature</a>
+                <a href="#matrix" class="btn-copper-outline">View Method Matrix</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1000&q=80" alt="Plumbing technician utilizing non-invasive diagnostic equipment">
+            </div>
+            <div class="hero-stat-badge">
+                <span style="font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: var(--accent-copper);">0%</span>
+                <p style="font-size: 0.8rem; color: var(--text-heading); font-weight: 600;">Wall Destruction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Quick Stats & Achievements Grid -->
+    <div class="container">
+        <div class="stats-wrapper">
+            <div class="stat-card">
+                <div class="stat-value">1/8"</div>
+                <div class="stat-desc">Acoustic Accuracy Margin</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">100%</div>
+                <div class="stat-desc">Non-Destructive Target</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">95%</div>
+                <div class="stat-desc">Cost Reduction vs Trenching</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">24/7</div>
+                <div class="stat-desc">Pressurized Main Protection</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"><div class="cyber-divider"></div></div>
+
+    <!-- SECTION 4: Platform Overview / Editorial Mission Section -->
+    <section id="about" class="container mission-grid section-padding">
+        <div class="mission-visual">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80" alt="High precision engineering instrumentation for sub-surface testing">
+        </div>
+        <div>
+            <span class="badge-cyber">Civic Technology Focus</span>
+            <h2>Preserving Property Integrity Across Twin Peaks</h2>
+            <p>Twin Peaks Longmont Hub functions as an independent technical publication dedicated to advancing residential engineering awareness across Longmont and the broader Front Range region.</p>
+            <p style="margin-top: 1rem;">Our primary focus centers on structural preservation, eco-friendly water management, and non-invasive plumbing diagnostic benchmarks that prevent catastrophic property loss while preserving local architectural finishes.</p>
+            <a href="#tech" class="btn-copper-outline" style="margin-top: 1.5rem;">Explore Diagnostic Tools</a>
+        </div>
+    </section>
+
+    <div class="container"><div class="cyber-divider"></div></div>
+
+    <!-- SECTION 5: Main Featured Article Section (~800-1000 words) -->
+    <section id="article" class="section-padding">
+        <div class="container">
+            <article class="article-card">
+                <div class="article-header-tag">Residential Infrastructure & Precision Hydraulics</div>
+                
+                <!-- EXACT ARTICLE TITLE REQUIRED BY PROMPT -->
+                <h1 class="article-title">Advanced Non-Invasive Leak Detection in Longmont Homes</h1>
+
+                <div class="article-content">
+                    <p>Traditional plumbing diagnostics in Twin Peaks Longmont often relied on destructive exploratory digging or drywall removal to find leaking pipes. In decades past, when a homeowner noticed an inexplicable rise in their monthly water bill or suspected a line breach beneath a concrete floor slab, plumbers had little choice but to break open plaster walls or jackhammer through basement foundations to physically locate the source of water loss. This invasive trial-and-error approach frequently resulted in thousands of dollars in structural damage long before the actual plumbing repair even began.</p>
+
+                    <h3>The Evolution of Non-Destructive Water Line Diagnostics</h3>
+                    <p>Modern technology has transformed this process through acoustic sensors, thermal imaging cameras, and inert tracer gas testing tailored to local soil conditions. Rather than making destructive cuts into living room walls or hardwood flooring, certified plumbing technicians now employ precise sensor networks that map sub-surface liquid dynamics with pinpoint accuracy. These non-destructive testing (NDT) methodologies allow specialists to isolate leaks located several feet beneath concrete foundations or hidden deep within multi-story wall cavities, saving property owners substantial time and unnecessary expense.</p>
+
+                    <p>In Longmont, specific regional factors make accurate leak locating particularly critical. Homes situated near the Twin Peaks Golf Course, Westview, or the St. Vrain River basin often rest on expansive clay soils characteristic of the Colorado Front Range. When hidden plumbing leaks saturate this expansive clay, the soil expands unevenly, placing upward hydraulic pressure against concrete footings and foundation slabs. Undetected leaks can therefore lead to foundation shifting, structural wall cracking, and severe mold proliferation inside finished living areas.</p>
+
+                    <div class="article-quote">
+                        "Longmont homeowners facing unexplained water loss benefit greatly from non-invasive locating methods that protect finished interiors."
+                    </div>
+
+                    <h3>Core Non-Invasive Technologies in Modern Practice</h3>
+                    <p>Non-invasive leak detection relies on three primary scientific principles: acoustic frequency analysis, thermographic infrared heat mapping, and pressure-induced tracer gas detection.</p>
+
+                    <p><strong>1. Ground Acoustic Frequency Amplification:</strong> When pressurized water escapes through a crack or pinhole in a copper, PEX, or PVC line, it generates distinct high-frequency sound vibrations. Ultrasonic ground microphones and listening rods amplify these subtle frequency signatures. By filtering out background ambient noise, technicians can pinpoint the exact origin of the pressurized water escape within a fraction of an inch.</p>
+
+                    <p><strong>2. Thermographic Infrared Scanning:</strong> Thermal imaging cameras detect minor surface temperature anomalies caused by moisture accumulation behind drywalls, beneath tile floors, or under concrete slabs. A hot water line leak creates a warm thermal bloom on the infrared spectrum, while cold water line breaches produce distinct thermal cooling drops, rendering hidden moisture patterns visible without touching the physical wall surface.</p>
+
+                    <p><strong>3. Inert Tracer Gas Testing:</strong> For small micro-leaks or non-pressurized drainage lines, technicians drain the system and introduce a safe, lightweight mixture of hydrogen and nitrogen gas. Because gas molecules are dramatically smaller than water molecules, the gas escapes rapidly through the micro-fissure and rises vertically through concrete slabs and flooring, where sensitive gas sniffers immediately register its presence above ground.</p>
+
+                    <h3>Preserving Interior Finishes and Community Infrastructure</h3>
+                    <p>You can <a href="https://longmontleakrepairpros.com/" class="seo-backlink-primary" target="_blank" rel="noopener">Learn More Longmont</a> about how non-destructive leak detection preserves property finishes during residential inspections across Boulder County. Protecting historic trim, custom tile work, and hardwood floors from unnecessary demolition ensures that local properties maintain their historic character and full resale value during essential repairs.</p>
+
+                    <p>Furthermore, early detection prevents unmetered municipal water waste. According to resource standards established by the <a href="https://www.epa.gov/watersense" target="_blank" rel="noopener">Environmental Protection Agency WaterSense Program</a>, household leaks can waste over 10,000 gallons of water per home annually. Preventing subsurface water loss helps protect Northern Colorado's precious water reserves while reducing utility expenses for property owners.</p>
+
+                    <h3>Regulatory Standards & Diagnostic Protocols</h3>
+                    <p>All non-invasive diagnostic procedures follow standardized protocols defined by industry organizations like the <a href="https://www.awwa.org/" target="_blank" rel="noopener">American Water Works Association</a>. These guidelines dictate pressure tolerance testing thresholds, sensor calibration metrics, and safety standards for municipal connection points.</p>
+
+                    <p>Embracing modern diagnostic technology saves time, reduces repair costs, and minimizes home disruption. By leveraging advanced acoustic, thermal, and tracer gas equipment, Twin Peaks Longmont homeowners can maintain structural integrity and keep their residential plumbing networks functioning efficiently for decades to come.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div class="container"><div class="cyber-divider"></div></div>
+
+    <!-- SECTION 6: Core Features & Key Value Grid -->
+    <section id="tech" class="container section-padding">
+        <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+            <span class="badge-cyber">Diagnostic Toolkit</span>
+            <h2>Precision Detection Arsenal</h2>
+        </div>
+
+        <div class="features-grid">
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">🔊</div>
+                <h3>Acoustic Sensor Arrays</h3>
+                <p>Digital sound filters capable of isolating sub-surface water pressure hiss through solid concrete foundation slabs up to 6 feet deep.</p>
+            </div>
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">🌡️</div>
+                <h3>Infrared Thermography</h3>
+                <p>High-resolution FLIR cameras that detect 0.1°C temperature shifts in walls and sub-flooring, highlighting hidden dampness instantly.</p>
+            </div>
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">🧪</div>
+                <h3>Hydrogen/Nitrogen Gas Trace</h3>
+                <p>Non-toxic tracer gas pressurized into dry lines to detect microscopic pinholes invisible to conventional hydrostatic checks.</p>
+            </div>
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">📊</div>
+                <h3>Digital Pressure Logging</h3>
+                <p>Continuous main line pressure sensors that detect pressure decay as low as 0.5 PSI over extended monitoring intervals.</p>
+            </div>
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">📷</div>
+                <h3>Micro-Video Endoscopy</h3>
+                <p>Flexible HD optic cameras routed into drain channels to inspect internal pipe walls for stress fractures or scaling.</p>
+            </div>
+            <div class="glass-panel feature-box">
+                <div class="feature-icon">🛡️</div>
+                <h3>Zero-Impact Mapping</h3>
+                <p>Surface chalking and digital blueprint overlays that map pipe locations before any repair work commences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Visual Breakdown / Step-by-Step Architecture Guide -->
+    <section class="container section-padding">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="badge-cyber">Diagnostic SOP</span>
+            <h2>4-Phase Non-Invasive Inspection Process</h2>
+        </div>
+
+        <div class="process-layout">
+            <div class="glass-panel process-card">
+                <div class="process-num">01</div>
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.8rem;">Static Pressure Testing</h4>
+                <p>Isolation of water main valves and installation of digital gauges to verify net pressure drops inside the line network.</p>
+            </div>
+            <div class="glass-panel process-card">
+                <div class="process-num">02</div>
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.8rem;">Thermal Surface Scan</h4>
+                <p>Wide-area infrared scanning of baseboards, flooring, and ceilings to locate moisture temperature footprints.</p>
+            </div>
+            <div class="glass-panel process-card">
+                <div class="process-num">03</div>
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.8rem;">Acoustic Correlation</h4>
+                <p>Targeted ground listening across marked pipe paths to isolate frequency spikes generated by pressurized fluid loss.</p>
+            </div>
+            <div class="glass-panel process-card">
+                <div class="process-num">04</div>
+                <h4 style="color: var(--accent-cyan); margin-bottom: 0.8rem;">Precision Marking</h4>
+                <p>Exact surface pinpointing with zero exploratory demolition, preparing the site for direct, surgical pipe access.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container"><div class="cyber-divider"></div></div>
+
+    <!-- SECTION 8: Comprehensive Comparison Table / Value Matrix -->
+    <section id="matrix" class="container section-padding">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="badge-cyber">Method Analysis</span>
+            <h2>Conventional vs Non-Invasive Diagnostics</h2>
+        </div>
+
+        <div class="glass-panel table-responsive">
+            <table class="matrix-grid-table">
+                <thead>
+                    <tr>
+                        <th>Diagnostic Metric</th>
+                        <th>Traditional Exploratory Digging</th>
+                        <th>Modern Non-Invasive Locating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Interior Drywall / Floor Damage</strong></td>
+                        <td>High (Multiple exploratory openings)</td>
+                        <td>Zero (100% surface preservation)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Location Precision Margin</strong></td>
+                        <td>Wide area (3 to 6 feet radius)</td>
+                        <td>Pinpoint (Within 1 to 2 inches)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Time Required to Locate Leak</strong></td>
+                        <td>4 to 8 Hours (Heavy labor)</td>
+                        <td>45 to 90 Minutes (Sensor based)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total Restoration Cost</strong></td>
+                        <td>High ($1,500 - $5,000+ in drywall/tile repair)</td>
+                        <td>Minimal (Only direct repair site touched)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Occupant Disruption Level</strong></td>
+                        <td>Severe (Noise, dust, debris)</td>
+                        <td>Minimal (Quiet acoustic & thermal scans)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SECTION 9: Interactive FAQ Section -->
+    <section id="faq" class="container section-padding">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="badge-cyber">Help Center</span>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-container">
+            <div class="glass-panel faq-card active">
+                <button class="faq-trigger">
+                    <span>How does acoustic equipment hear leaks through solid concrete slabs?</span>
+                    <span class="faq-plus">+</span>
+                </button>
+                <div class="faq-body">
+                    <p>Water escaping under pressure creates high-frequency sound waves that travel through solid slab materials. Highly sensitive piezoelectric microphones amplify these sound signatures, allowing trained technicians to distinguish pipe leaks from ambient background noise.</p>
+                </div>
+            </div>
+
+            <div class="glass-panel faq-card">
+                <button class="faq-trigger">
+                    <span>Can infrared cameras detect leaks through carpet and hardwood floors?</span>
+                    <span class="faq-plus">+</span>
+                </button>
+                <div class="faq-body">
+                    <p>Yes. Thermal imaging cameras measure subtle surface temperature differentials created by warm or cool water pooling beneath flooring surfaces, revealing dampness beneath carpet, hardwood, vinyl, and tile without pulling up materials.</p>
+                </div>
+            </div>
+
+            <div class="glass-panel faq-card">
+                <button class="faq-trigger">
+                    <span>Is tracer gas safe to use inside occupied residential homes?</span>
+                    <span class="faq-plus">+</span>
+                </button>
+                <div class="faq-body">
+                    <p>Absolutely. The tracer gas used consists of a non-toxic, non-flammable mixture of 5% hydrogen and 95% nitrogen. It is completely odorless, safe for indoor environments, and leaves no residue behind.</p>
+                </div>
+            </div>
+
+            <div class="glass-panel faq-card">
+                <button class="faq-trigger">
+                    <span>What are early warning signs that my Longmont home has a hidden leak?</span>
+                    <span class="faq-plus">+</span>
+                </button>
+                <div class="faq-body">
+                    <p>Key warning signs include unexpected spikes in your monthly water bill, warm spots on basement or ground level floors, the sound of running water when all taps are closed, or dampness along interior baseboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: Expert Tips & Best Practices Cards -->
+    <section class="container section-padding">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="badge-cyber">Property Protection</span>
+            <h2>Best Practices for Boulder County Homeowners</h2>
+        </div>
+
+        <div class="tips-layout">
+            <div class="glass-panel tip-card-inner">
+                <div class="tip-badge">01</div>
+                <div>
+                    <h3 style="margin-bottom: 0.6rem; color: #ffffff;">Perform Bi-Annual Meter Stress Checks</h3>
+                    <p style="color: var(--text-body); font-size: 0.95rem;">Turn off all household water fixtures for 2 hours and check your main municipal meter dial. If the triangular leak indicator moves even slightly, an unmetered line breach is active somewhere on your property.</p>
+                </div>
+            </div>
+            <div class="glass-panel tip-card-inner">
+                <div class="tip-badge">02</div>
+                <div>
+                    <h3 style="margin-bottom: 0.6rem; color: #ffffff;">Monitor Water Pressure Regulators (PRVs)</h3>
+                    <p style="color: var(--text-body); font-size: 0.95rem;">Longmont municipal main line water pressure can fluctuate. Ensure your home's Pressure Reducing Valve maintains household delivery between 50 and 65 PSI to protect copper pipe solder joints from stress fractures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 11: User Feedback & Testimonials Showcase -->
+    <section class="container section-padding">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="badge-cyber">Resident Feedback</span>
+            <h2>Community Insights</h2>
+        </div>
+
+        <div class="reviews-grid">
+            <div class="glass-panel review-card">
+                <p style="font-style: italic; color: var(--text-body);">"The acoustic scan located our sub-slab leak within 20 minutes right under a specific hallway tile. Not a single extra tile was broken during the repair."</p>
+                <div class="review-author">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Resident" class="review-avatar">
+                    <div>
+                        <h4 style="font-size: 0.95rem;">Elena Rostova</h4>
+                        <span style="font-size: 0.8rem; color: var(--accent-cyan);">Twin Peaks Resident</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel review-card">
+                <p style="font-style: italic; color: var(--text-body);">"Saved us thousands in potential drywall repairs after a hidden hot water pipe began leaking in our living room wall. Thermal imaging pinpointed it immediately."</p>
+                <div class="review-author">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Resident" class="review-avatar">
+                    <div>
+                        <h4 style="font-size: 0.95rem;">Marcus Vance</h4>
+                        <span style="font-size: 0.8rem; color: var(--accent-cyan);">Westview Homeowner</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-panel review-card">
+                <p style="font-style: italic; color: var(--text-body);">"Tracer gas testing identified a tiny micro-leak beneath our basement concrete slab that three previous plumbers missed. Outstanding technology."</p>
+                <div class="review-author">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80" alt="Resident" class="review-avatar">
+                    <div>
+                        <h4 style="font-size: 0.95rem;">Sarah Lin</h4>
+                        <span style="font-size: 0.8rem; color: var(--accent-cyan);">Longmont Property Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 12: Highlighted Resource Callout Banner -->
+    <section class="container section-padding">
+        <div class="banner-callout">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Suspecting a Hidden Water Leak in Your Home?</h2>
+            <p style="max-width: 680px; margin: 0 auto 2rem auto; color: var(--text-heading);">Arrange an acoustic and infrared diagnostic evaluation with local Longmont leak locating specialists today.</p>
+            <a href="#contact" class="btn-cyan">Schedule Diagnostic Inspection</a>
+        </div>
+    </section>
+
+    <!-- SECTION 13: Functional Contact / Consultation Form Section -->
+    <section id="contact" class="container section-padding">
+        <div class="glass-panel contact-grid" style="padding: 4rem;">
+            <div>
+                <span class="badge-cyber">Technical Assistance</span>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Schedule Inspection</h2>
+                <p style="color: var(--text-body);">Connect with certified non-destructive leak detection technicians across Longmont and Boulder County.</p>
+            </div>
+            <form class="form-stack" onsubmit="event.preventDefault(); alert('Diagnostic request submitted successfully. A Longmont technical specialist will contact you shortly.');">
+                <div class="form-control">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-control">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-control">
+                    <select required>
+                        <option value="" disabled selected>Select Diagnostic Service</option>
+                        <option value="acoustic">Sub-Slab Acoustic Mapping</option>
+                        <option value="thermal">Infrared Thermal Leak Sweep</option>
+                        <option value="tracer">Tracer Gas Micro-Leak Locating</option>
+                        <option value="general">General Plumbing Pressure Audit</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <textarea rows="4" placeholder="Describe your property symptoms (e.g., rising water bill, warm floor spots, water noise)..." required></textarea>
+                </div>
+                <button type="submit" class="btn-cyan" style="justify-content: center;">Submit Technical Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- SECTION 14: Comprehensive Footer -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-cols">
+                <div>
+                    <div class="nav-logo" style="margin-bottom: 1rem;">
+                        Twin Peaks <span>Longmont Hub</span>
+                    </div>
+                    <p style="line-height: 1.8;">An independent Web 2.0 digital portal exploring modern non-invasive plumbing engineering, structural health monitoring, and water conservation technologies across Boulder County.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#about">About Platform</a></li>
+                        <li><a href="#article">Featured Journal</a></li>
+                        <li><a href="#tech">Diagnostic Tools</a></li>
+                        <li><a href="#matrix">Method Matrix</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Topics</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#">Acoustic Sensors</a></li>
+                        <li><a href="#">Thermal Imaging</a></li>
+                        <li><a href="#">Expansive Clay Soils</a></li>
+                        <li><a href="#">Tracer Gas Locating</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Outbound Partners</h4>
+                    <ul class="footer-nav">
+                        <li><a href="https://longmontleakrepairpros.com/" target="_blank" rel="noopener">Longmont Leak Repair Pros</a></li>
+                        <li><a href="https://www.epa.gov/watersense" target="_blank" rel="noopener">EPA WaterSense Program</a></li>
+                        <li><a href="https://www.awwa.org/" target="_blank" rel="noopener">AWWA Water Resources</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Twin Peaks Longmont Hub (twinpeakslongmonthub). All rights reserved.</p>
+                <p>Designed for Advanced Structural Preservation & Civic Hydrology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Minimal Vanilla JS for Accordion Interactive Element -->
+    <script>
+        document.querySelectorAll('.faq-trigger').forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const parent = trigger.parentElement;
+                const isActive = parent.classList.contains('active');
+                
+                document.querySelectorAll('.faq-card').forEach(card => card.classList.remove('active'));
+                
+                if (!isActive) {
+                    parent.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
